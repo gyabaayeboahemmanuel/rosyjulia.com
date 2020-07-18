@@ -1,0 +1,264 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Black Berry",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-1.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "White Onion",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-2b.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Plantain",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-3.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Chicken",
+        "price": 22.99,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-4.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Green Pepper",
+        "price": 88.99,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-5.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "Carrot",
+        "price": 32.99,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-6.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "Garden Eggs",
+        "price": 45.99,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-7.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "Cassava",
+        "price": 5.00,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-8.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "9" },
+      "fields": {
+        "title": "Sweet Potatoes",
+        "price": 33.99,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-9.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "10" },
+      "fields": {
+        "title": "Brown Sweet Potatoes",
+        "price": 33.99,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-10.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "11" },
+      "fields": {
+        "title": "Cocoa Seedlings",
+        "price": 15.99,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-11.jpg" } } }
+      }
+    }
+    ,
+    {
+      "sys": { "id": "12" },
+      "fields": {
+        "title": "Day Old Chicks",
+        "price": 9.99,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-12.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "13" },
+      "fields": {
+        "title": "Live Cow",
+        "price": 3382.99,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-13.jpg" } } }
+      }
+    }
+    ,
+    {
+      "sys": { "id": "14" },
+      "fields": {
+        "title": "Fresh Wheet",
+        "price": 25.99,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-14.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "15" },
+      "fields": {
+        "title": "Cocoyam",
+        "price": 5.00,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-15.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "16" },
+      "fields": {
+        "title": "Fresh Tomato",
+        "price": 20.99,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-16.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "17" },
+      "fields": {
+        "title": "Yam",
+        "price": 4000.00,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-17a.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "18" },
+      "fields": {
+        "title": "Pig",
+        "price": 450.00,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-18a.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "19" },
+      "fields": {
+        "title": "Ginder",
+        "price": 4.00,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-19.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "20" },
+      "fields": {
+        "title": "Goat",
+        "price": 250.00,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-19.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "21" },
+      "fields": {
+        "title": "Cucumber",
+        "price": 5.00,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-21.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "22" },
+      "fields": {
+        "title": "Beans",
+        "price": 6.00,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-22.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "23" },
+      "fields": {
+        "title": "Cabbage",
+        "price": 5.00,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-23.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "24" },
+      "fields": {
+        "title": "Galic",
+        "price": 3.00,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-24.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "25" },
+      "fields": {
+        "title": "Okra",
+        "price": 8.00,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-25.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "26" },
+      "fields": {
+        "title": "Local rice",
+        "price": 25.00,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-26.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "27" },
+      "fields": {
+        "title": "Yellow Corn",
+        "price": 20.00,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-27.jpg" } } }
+      }
+    }
+    ,
+    {
+      "sys": { "id": "28" },
+      "fields": {
+        "title": "Millet",
+        "price": 4000.00,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-28.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "29" },
+      "fields": {
+        "title": "Sorghum",
+        "price": 4000.00,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-29.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "30" },
+      "fields": {
+        "title": "Palm fruit",
+        "price": 10.00,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-30.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "31" },
+      "fields": {
+        "title": "White Maize",
+        "price": 25.00,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-31.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "32" },
+      "fields": {
+        "title": "Groundnut",
+        "price": 9.00,
+        "image": { "fields": { "file": { "url": "./images/products_images/product-32.jpg" } } }
+      }
+    }
+
+  ]
+}

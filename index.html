@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="flavicon.png">
+    <title>ROSYJULIA | HOME</title>
+    <!--  font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./myStyles/productstyles.css">
+    <link rel="stylesheet" href="./myStyles/formStyle.css">
+    <!-- <link rel="stylesheet" href="./myStyles/styles.css"> -->
+    
+   
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-center">
+        <div class="popup" onclick="myPop()">
+            <span class="popuptext" id="myPopup">Login Successful!</span>
+        </div>
+        <span class="nav-icon">
+            <i class="fas fa-bars menu" onclick="openNav()"></i>
+            <div class="sidenav" id="mySidenav">
+                <img src="./images/logonew.PNG" alt="rosyjlia logo">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a  href="index.html">HOME</a>
+                <a href="./ourfarms.html">OUR FARMS</a>
+                <a href="#shopNow">PRODUCTS</a>
+                <!-- <a href="gallery.html">FARM GALLERY</a> -->
+                <a href="about.html">ABOUT US</a>
+                <a href="#" id="logout" onclick="myLogOut() " style="display: none;" >LOG OUT</a> 
+            </div>
+        </span>
+        <img src="./images/logonew.PNG" alt="rosyjlia logo">
+        <!-- Search Filter -->
+<input type="text" id="mysearch" onkeyup="productfilter()" placeholder="Search for products...">
+<!-- end of search Filter -->
+ <button class="login-btn" id="login-btn" onclick="login()"><span><i class="fas fa-user"></i></span><span>Login</span></button>
+        <div class="cart-btn">
+            <span class="nav-icon">
+                <i class="fas fa-cart-plus"></i>
+            </span>
+            <div class="cart-items">0</div>
+        </div>
+        <span style="font-size: 20px; color: orange;margin-left: 30px;" id="userName"> </span>
+        
+    </div>
+</nav>
+<!-- End of Navbar -->
+<marquee behavior="" direction="right" ><h1 style="color:rgb(0, 99, 0)">Welcome to RosyJulia</h1></marquee>
+<section>
+<!-- Carousel -->
+<div class="carousel-container">
+    <div class="carousel-inner">
+      <div class="track">
+          <!-- Single Carousel -->
+          
+        <!-- <div class="card-container">
+          <div class="card">
+            <div class="img img-container"><img src="./images/product-1.jpeg" alt="product" class="product-img">
+                <button class="bag-btn" data-id="1">
+                    <i class="fas fa-shopping-cart"></i>
+                    add to bag
+                </button></div>
+            <div class="info">
+                <h3>queen bed</h3>
+                <h4>$150</h4>
+            </div>
+          </div>
+        </div> -->
+        <!-- End of single Carousel -->
+       
+      </div>
+    </div>
+    <div class="nav">
+      <button class="prev">
+        <i class="material-icons">
+        &leftarrow;
+        </i>
+      </button>
+      <button class="next">
+        <i class="material-icons">
+        &rightarrow;
+        </i>
+      </button>
+    </div>
+  </div>
+<!-- end of Carossel -->
+<!-- Hero -->
+<div class="slideshow-container">
+   
+
+    <div style="text-align: center;" class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+	<div class="mySlides fade">
+		
+		<img height="50%" src="./images/agriculture-botanical-color-container-175262.jpg" alt=""width="100%">
+		<div class="text">Welcome to the one stock farms</div>
+	</div>
+
+	<div class="mySlides fade">
+		
+		<img src="./images/agriculture.jpg" alt="" width="100%" height="100%">
+		<div class="text">Get the lastest goods from our farms</div>
+	</div>
+
+	<div class="mySlides fade">
+		
+		<img height="100%" src="./images/close-up-of-wheat-326082.jpg" alt=""width="100%">
+		<div class="text">All our goods are fresh  and the best</div>
+    </div>
+    <div class="mySlides fade">
+		
+		<img height="100%" src="./images/selective-focus-of-cow-photo-755025.jpg" alt=""width="100%">
+		<div class="text">At RosyJulia, we give you the best Service</div>
+	</div>
+    <header class="hero">
+        <div class="banner">
+            <h1 class="banner-title">product collections</h1>
+            <a href="#shopNow" style="text-decoration: none; color:white;"><button class="banner-btn">shop now</button></a> 
+        </div>
+    </header>
+</div>
+
+
+<!-- End of hero -->
+
+<!-- products -->
+<section id="shopNow" class="products">
+<div class="section-title">
+    <h2 >our products</h2>
+    <h1 style="color: red; display: none;text-align: center;" id="noResult"> Your Search Results</h1>
+</div>
+<div class="products-center" id="produ">
+    <!-- single Product -->
+    <!-- <article class="product">
+        <div class="img-container">
+            <img src="./images/product-1.jpeg" alt="product" class="product-img">
+            <button class="bag-btn" data-id="1">
+                <i class="fas fa-shopping-cart"></i>
+                add to bag
+            </button>
+        </div>
+       <h3>Ma bed</h3>
+       <h4>$150</h4>
+    </article> -->
+    <!-- single Product --> 
+</div>
+</section>
+<!-- end of products -->
+<!-- cart -->
+<div class="cart-overlay">
+    <div class="cart">
+        <span class="close-cart">
+            <i class="fas fa-window-close"></i>
+        </span>
+        <h2>your cart</h2>
+        <div class="cart-content">
+            <!-- cart item -->
+            <!--    <div class="cart-item">
+                <img src="${item.image}" alt="product">
+                <div>
+                    <h4>${item.title}</h4>
+                    <h5>$ ${item.price}</h5>
+                    <span class="remove-item" data-id = ${item.id}>remove</span>
+                </div>
+                <div>
+                    <i class="fas fa-chevron-up" ${item.id}></i>
+                    <p class="item-amount">${item.amount}</p>
+                    <i class="fas fa-chevron-down" ${item.id}></i>
+                </div>
+            </div>-->
+            <!-- end of cart item -->
+        </div>
+        <div class="cart-footer">
+            <h3> your total:GH₵ <span class="cart-total">0</span></h3>
+            <button class="clear-cart banner-btn">clear cart</button><br><br> <br>
+            <button class="check-out banner-btn " style="color: white;" id="payment" onclick="login()">Proceed to check-out</button>
+            <button class="check-out banner-btn " style="color: white;display: none;" id="deliver" onclick="delivery()">Delivery Details</button>
+            <div id="paypal-button-container" style="display: none;"></div>
+          <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+          <script>
+            paypal.Buttons({
+                style: {
+                    shape: 'pill',
+                    color: 'silver',
+                    layout: 'vertical',
+                    label: 'buynow',
+                    
+                },
+                createOrder: function(data, actions) {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: '1'
+                            }
+                        }]
+                    });
+                },
+                onApprove: function(data, actions) {
+                    return actions.order.capture().then(function(details) {
+                        alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                    });
+                }
+            }).render('#paypal-button-container');
+          </script></button></p>
+    </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- end of cart -->
+<!-- Delivery form -->
+<div class="formContainer">
+    <div id="delivery" class="modal row">
+<form class="modal-content animate column"  >
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('delivery').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+    <div class="container" id="geky-details">
+        <h1 style="text-align: center;">Delivery Details</h1>
+      <label for="country"><b>Country</b></label>
+      <input type="text" placeholder="Enter country" name="countryname"id="country" required>
+      <label for="region"><b>Region</b></label>
+      <input type="text" placeholder="Enter Region" name="regionname"id="region" required>
+      <label for="town"><b>Town</b></label>
+      <input type="text" placeholder="Enter Town" name="townname"id="town" required>
+      <label for="houseAddress"><b>House Address</b></label>
+      <input type="text" placeholder="Enter House Address" name="houseAddress"id="houseAddress" required>
+      <label for="phoneNumber"><b>Phone Number</b></label>
+      <input type="text" placeholder="Enter Phone Number" name="phoneNumber"id="phoneNumber" required>
+      
+      <button type="submit" id="submitDetail"  onclick="submitDetails()"  >Submit Details</button>
+    </div>
+</form>
+</div>
+</div>
+<!-- login form -->
+<div class="formContainer">
+    <div id="id01" class="modal row">
+      
+      <form class="modal-content animate column" >
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          
+        </div>
+        <div class="container" id="geky-login">
+            <h1 style="text-align: center;">Login</h1>
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname"id="logemail" required>
+    
+          <label for="psw" ><b>Password</b></label>
+          <input id="logpassword" type="password" placeholder="Enter Password" name="psw" required>
+          
+          <button type="submit" id="userLogin"  onclick  >Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        
+            <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Don't have an account? <a href="#" onclick="signup()">Sign Up</a></span>
+            </div>
+        </div>
+        <form class="modal-content animate column" >
+            <div class="alert" id ="alertm">
+                <span class="closebtn"  onclick="this.parentElement.style.display='none';">&times;</span> 
+                <strong>Congratulations</strong> Your account has successfully been created. Please Login
+            </div>
+        <div class="container" id="geky-signup" style="display: none;">
+            
+                <h1 style="text-align: center;">Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+              <label for="email"><b>Email</b></label>
+              <input id="email" type="text" placeholder="Enter Email" name="email" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+
+              <label for="psw"><b>Repeat Password</b></label>
+              <input id="repassword" type="password" placeholder="Repeat Password" name="psw" required>
+                
+              <button type="submit" id="userSignup" onclick="document.getElementById('alertm').style.display='block';">Sign Up</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            
+           
+            <div class="container" style="background-color:#f1f1f1">
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                <span class="psw">Already have an account? <a href="#" onclick="login2()">Login</a></span>
+                
+            </div>
+        </div>
+          </form>
+      </form>
+
+      <br>
+      
+    </div>  
+   
+</div>   
+
+<!-- End of login form -->
+
+<!-- Footer -->
+<footer>
+              
+    <div class="follow">
+        <p>Follow us</p>
+        <a href="https://www.instagram.com/geky94"><img src="./images/social_media/instagram-new.png" height="50px" width="50px"  alt="instagram"></a>
+        <a href=""><img src="./images/social_media/facebook-new.png"  height="50px" width="50px" alt="facebook"></a>
+        <a href=""><img src="./images/social_media/twitter.png" height="50px" width="50px"  alt="twitter"></a>
+        <a href="https://www.albemart.com/rosyjulia"><img src="./images/social_media/albemart.png" height="50px" width="50px"  alt="albemart"></a>
+    </div>
+    <div>Developed by GEKY</div>
+    <div class="copyright">Copyright  &copy; 2020</div>
+</footer>
+<script src="./scripts/app.js"></script>
+<script src="./scripts/main.js"></script> 
+</body>
+</html>
