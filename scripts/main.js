@@ -7,27 +7,27 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
-// JSON
-let suscription = [];
-//
-const addSuscription = (ev)=> {
-    en.preventDefault();
-    let suscription = {
-        id: Date.now(),
-        name: document.getElementById("name").Value,
-        email: document.getElementById("email").Value
-    }
-    suscription.push(movie);
-    document.forms[a].reset(); // to clear the form for the next entries
+// // JSON
+// let suscription = [];
+// //
+// const addSuscription = (ev)=> {
+//     en.preventDefault();
+//     let suscription = {
+//         id: Date.now(),
+//         name: document.getElementById("name").Value,
+//         email: document.getElementById("email").Value
+//     }
+//     suscription.push(movie);
+//     document.forms[a].reset(); // to clear the form for the next entries
 
-    // for display purposes only
-    console.warn("suscribed", {suscription});
-    let pre = document.querySelector [ '#msg pre'];
-    pre.textContent = '\n' + JSON.stringify(suscription, '\t', 2);
-}
-document.addEventListener('DOMContentLoaded', () =>(
-    document.getElementById('suscribe').addEventListener('click', addSuscription)
-))
+//     // for display purposes only
+//     console.warn("suscribed", {suscription});
+//     let pre = document.querySelector [ '#msg pre'];
+//     pre.textContent = '\n' + JSON.stringify(suscription, '\t', 2);
+// }
+// document.addEventListener('DOMContentLoaded', () =>(
+//     document.getElementById('suscribe').addEventListener('click', addSuscription)
+// ))
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
